@@ -1,0 +1,19 @@
+
+
+.logo {
+	padding: 15px 7px;
+}
+
+.navbar-default {
+  background-color: #f3bf75;
+  background-image: url("./img/tile-d-bg.png")
+}
+
+.navbar-default li:hover {
+	background-color: white;
+}
+
+.navbar-brand {
+	padding: 0px;
+	
+}
