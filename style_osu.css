@@ -1,19 +1,106 @@
 
+/* color, border, and image for all the navigation bar */
 
-.logo {
-	padding: 15px 7px;
+.navbar {
+  background-color: #f36119; /* orange */
+  background-image: url("./img/tile-d-bg.png");
+  border: none;
 }
 
-.navbar-default {
-  background-color: #f3bf75;
-  background-image: url("./img/tile-d-bg.png")
+
+
+.navbar-toggle {
+  border-color: white;
+}
+.navbar-toogle,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: black;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
 }
 
-.navbar-default li:hover {
-	background-color: white;
-}
+/* details of the left brand text, use background and spacing for logo */
 
 .navbar-brand {
-	padding: 0px;
-	
+  height: 80px;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 110px;
+  background-image: url("./img/osu_logo_back.png");
+  background-repeat: no-repeat;
+  color: #ffffff !important;
+}
+
+/* Details for navigation links */
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+  color: white !important;
+}
+
+.nav >li >a:hover {
+	background-color: #4f4f4f !important;
+	background-image: url("./img/tile-d-bg.png");
+}
+
+/* Details for active link */
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #000000 !important;   /* prevents general :hover from changing background */
+}
+
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+p {
+	font-family: 'Roboto Slab', sans-serif;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Play', sans-serif;
+}
+
+#name {
+	text-align: right;
+	margin: 10px 0px 0px 0px;
+}
+#subname {
+	text-align: right;
+	margin: 0px 0px 10px 0px;
+}
+
+.my-info {
+	font-family: 'Roboto Slab', sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+
+/* Details for when screen size is smaller tan 767px */
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
