@@ -11,8 +11,10 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    
     <link rel="stylesheet" type="text/css" href="./style_osu.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Play" rel="stylesheet">
     
@@ -66,37 +68,37 @@
 
 <!-- End Navigation -->
 
-<div id="content" class="container">
-	<div class="row">
-		<div class="well-lg col-lg-4 col-md-4 col-sm-4 col-xs-12">
-			<img src="img/avatar_med.jpg" width="200" />
+<div id="content" class="container" style="max-width: 970px; padding-bottom: 30px;">
+	<div class="row row-centered">
+		<div class="col-centered col-max-230 col-sm-4 vtop" style="padding-top: 30px;">
+			<img class="" src="img/avatar_med.jpg" width="200" />
 			<h2 id="name"> Rafa Leano </h3>
 			<h4 id="subname"> (Rafael Leaño) </h4>
 			
-			<p>
-				<span class="glyphicon glyphicon-education"></span>
+			<p class="text-right p-a-10">
+				
 				<span class="my-info">
 				PhD Student
 				</span>
+				<i class="fa fa-book fa-fw"></i>
 				<br>
-				<i class="glyphicon glyphicon-briefcase"></i>				
+								
 				<span class="my-info">
 				Research Assistant
 				</span>
+				<i class="fa fa-briefcase fa-fw"></i>
 				<br>
-				<i class="fa fa-map"></i>
-				<span class="my-info">
-					Kelley Eng. Center #2030
+				
+				<span class="my-info" >
+					Kelley Eng. Center 2030
 				</span>
+				<i class="fa fa-map fa-fw"></i>
+				<br>
 			</p>
-			
 		</div>
-		
-		<div class="well-lg col-lg-1 col-md-1 col-sm-1"></div> 
-		
-		<div class="well-lg col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<div class="col-max-550 col-centered col-md-7 col-sm-6 col-xs-12">
 			<h1> About me </h1>
-			<p>
+			<p class="text-justify">
 				I am a Computer Science PhD student at the 
 				<a href="#">School of Electrical Engineering and Computer Science (EECS)</a> at 
 				<a href="#">Oregon State University (OSU)</a>,
@@ -104,73 +106,85 @@
 				<a href="#">Dr. Anita Sarma</a>.
 				<br><br>
 				Currently, my focus is on <i>collaborative software development</i>. I address issues such as task assignment and conflict resolution. My aim is to build tools that aid developers to work better together. For more details please refer to the appropriate pages below.
+				
+			</p>
+			<p class="text-center">
+				<a class="no-decor" href="#" data-toggle="tooltip" title="LinkedIn" data-placement="bottom">
+					<i class="fa fa-linkedin-square fa-5x" style="padding: 10px;"></i>
+				</a>
+				<a class="no-decor" href="#" data-toggle="tooltip" title="GitHub" data-placement="bottom">
+				<i class="fa fa-github-square fa-5x" style="padding: 10px;"></i>
+				</a>
+				<a class="no-decor" href="#" data-toggle="tooltip" title="Email" data-placement="bottom">
+				<i class="fa fa-envelope-square fa-5x" style="padding: 10px;"></i>
+				</a>
 			</p>
 		</div>
-	
 	</div>
 </div>
 
-
-
-<footer class="navbar-default">
-	<div class="container-fluid" style="padding: 0px">
-
-	<div class="well-lg col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		<div class="row">
-			<div class="custom">
-				<i class="fa fa-university fa-3x pull-left"></i>
-				<div class="text">
-					PhD Student
-					<h6 class="cust-margin">Oregon State University</h6>
-				</div> 
+<footer>
+<div id="content" class="container" style="max-width: 970px;">
+	<div class="col-centered col-sm-12" style="padding: 20px;">
+		<div class="row row-centered">
+			<div class="col-centered col-md-6 col-sm-7">
+					<div class="custom text-left">
+						<i class="fa fa-university fa-3x pull-left"></i>
+						<div class="text">
+							PhD Student
+							<h6 class="cust-margin">Oregon State University</h6>
+						</div> 
+					</div>
+					<div class="custom text-left">
+						<i class="fa fa-connectdevelop fa-3x pull-left"></i>
+						<div class="text">
+							Graduate Research Assistant
+							<h6 class="cust-margin">School of Electrical Engineering and Computer Science</h6>
+		
+						</div> 
+					</div>
+				
 			</div>
-			<div class="custom">
-				<i class="fa fa-connectdevelop fa-3x pull-left"></i>
-				<div class="text">
-					Graduate Research Assistant
-					<h6 class="cust-margin">School of Electrical Engineering and Computer Science</h6>
-
-				</div> 
+			<div class="col-centered col-lg-5 col-md-5 col-sm-4 vtop">
+				<p class="cust-margin">
+					<span class="fa fa-calendar"></span> Last Updated – Oct 2016
+				</p>
+				<p class="cust-margin">
+					<span class="fa fa-copyright"></span> Rafa Leano – 2016
+				</p>
 			</div>
 		</div>
 	</div>
-	<div class="well-lg col-lg-5 col-md-5 col-sm-5 col-xs-12">
-		<p class="cust-margin">
-			<span class="fa fa-calendar"/> Last Updated – Oct 2016
-		</p>
-		<p class="cust-margin">
-			<span class="fa fa-copyright"></span> Rafa Leano – 2015
-		</p>
-	</div>
-	</div>
+</div>
 </footer>
 
+
 <script src="./js/bootstrap.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-
-
 
 
 <!-- APP CONTENT -->
 
-  <!-- jQuery CDN -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <!-- jQuery local fallback -->
-  <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
-
-  <!-- Bootstrap JS CDN -->
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  <!-- Bootstrap JS local fallback -->
-  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
-  <!-- Bootstrap CSS local fallback -->
-  <script>
-    $(document).ready(function() {
-    var bodyColor = $('body').css('color');
-    if(bodyColor != 'rgb(51, 51, 51)') {
-    $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');}});
-  </script>
+	<!-- jQuery CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS CDN -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- Bootstrap JS local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
+	<!-- Bootstrap CSS local fallback -->
+	<script>
+	    $(document).ready(function() {
+	    var bodyColor = $('body').css('color');
+	    if(bodyColor != 'rgb(51, 51, 51)') {
+	    $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');}});
+	</script>
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 </body>
 </html>

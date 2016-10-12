@@ -7,8 +7,6 @@
   border: none;
 }
 
-
-
 .navbar-toggle {
   border-color: white;
 }
@@ -29,10 +27,14 @@
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 110px;
-  background-image: url("./img/osu_logo_back.png");
+  padding-left: 130px;
+  background-image: url("./img/osu_logo_back2.png");
   background-repeat: no-repeat;
   color: #ffffff !important;
+}
+
+.navbar-nav {
+	padding-right: 30px;
 }
 
 /* Details for navigation links */
@@ -75,17 +77,51 @@ h1, h2, h3, h4 {
 
 #name {
 	text-align: right;
-	margin: 10px 0px 0px 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
 #subname {
 	text-align: right;
-	margin: 0px 0px 10px 0px;
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
 
 .my-info {
 	font-family: 'Roboto Slab', sans-serif;
-	margin: 0px 0px 0px 0px;
-	padding-left: 10px;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.col-max-230 {
+    /* custom max width */
+    max-width:230px;
+}
+
+.col-max-550 {
+    /* custom max width */
+    max-width:550px;
+}
+
+.vtop {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+
+.no-decor{
+	text-decoration: none !important;
 }
 
 /* Details for when screen size is smaller tan 767px */
@@ -108,11 +144,9 @@ h1, h2, h3, h4 {
 
 .custom {
 	height: 60px;
-	padding: 0px 0px 0px 20px;
 }
 
 .text {
-	margin-left: 60px;
 	overflow: hidden;
 }
 
@@ -122,6 +156,5 @@ h1, h2, h3, h4 {
 }
 
 footer {
-    padding-top: 0px;
     background-color: lightgray;
 }
