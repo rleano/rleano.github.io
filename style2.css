@@ -1,0 +1,58 @@
+body{
+	margin:0;
+	padding:0;
+    background:#FFF;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+}
+a{
+	color:#000000;
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: none; 
+    cursor:pointer;
+	color:#cccccc!important;
+}
+
+ h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+	font-family:"Helvetica";
+}
+
+.container{
+	max-width:970px;
+}
+
+.code{
+    display: inline;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#navbar-style {
+    background-image:url("img/tile_bg.png");
+    background-color:#d96c10;
+}
+
+.navbar-brand{
+	height:auto;
+	padding: 0px 15px 15px;
+	font-size:20px!important;
+	font-weight:normal;
+	font-weight:600;
+}
+
+.navbar-brand img{
+    float:left
+	max-height: 200px;
+	margin: 0 5px 0 0;
+	display:inline;
+}
+
+.navbar-row{
+    text-align: center;
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+}

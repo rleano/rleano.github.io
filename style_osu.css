@@ -5,6 +5,7 @@
   background-color: #f36119; /* orange */
   background-image: url("./img/tile-d-bg.png");
   border: none;
+  border-radius: 0 !important;
 }
 
 .navbar-toggle {
@@ -109,10 +110,21 @@ h1, h2, h3, h4 {
     max-width:230px;
 }
 
+.col-max-390 {
+    /* custom max width */
+    max-width:390px;
+}
+
 .col-max-550 {
     /* custom max width */
     max-width:550px;
 }
+
+.col-max-780 {
+    /* custom max width */
+    max-width:780px;
+}
+
 
 .vtop {
     display: inline-block;
@@ -152,7 +164,7 @@ h1, h2, h3, h4 {
 
 .cust-margin {
 	margin-top: 4px;
-	margin-bottom: 4px; 
+	margin-bottom: 4px;
 }
 
 footer {
