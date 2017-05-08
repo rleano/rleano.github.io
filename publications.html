@@ -2,116 +2,226 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- tells IE to use latest render engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the size of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <title>publications - A ‘bit’ of me – Rafael Leano</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/octicons.css">
+
+    <link rel="stylesheet" type="text/css" href="./style_osu.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Play" rel="stylesheet">
+
+    <title>a `bit` of me – Rafa Leano</title>
+
 </head>
 <body>
-<!-- Main container -->
-<div class="page-container">
-    <!-- Navigation Bloc --><div id="b-nav" class="bloc-container">
-	<div id="bloc-nav" class="d-mode">
-		<div class="bloc bg-tile-d-bg bg-repeat bgc-4 d-bloc" id="nav-bloc">
-			<div class="container bloc-sm">
-				<nav class="navbar row">
-					<div class="navbar-header">
-						<a class="navbar-brand ltc-3" href="index.html"><img src="img/R-N.blk.svg" width="40" alt='' />A ‘bit’ of me – Rafael Leano</a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-1">
-						<ul class="site-navigation nav">
-							<li>
-								<a href="index.html" class="ltc-3">Home</a>
-							</li>
-							<li>
-								<a href="research.html">Research</a>
-							</li>
-							<li>
-								<a href="projects.html">Projects</a>
-							</li>
-							<li>
-								<a href="publications.html">Publications</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+
+<!-- Start Navigation -->
+
+<div class="navbar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+
+			<a class="navbar-brand" href="#">a `bit` of me – Rafa Leano</a>
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-explanded="false">
+
+				<!-- hide info from screen reader -->
+				<span class="sr-only"></span>
+
+				<!-- three bar on right -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+        <li>
+					<a href="index.html"> <span class="glyphicon glyphicon-home"/>
+						<span class="sr-only"> Home (current)</span>
+					</a>
+				</li>
+				<li>
+					<a href="research.html">Research</a>
+				</li>
+				<li class="active">
+					<a href="#">Publications</a>
+				</li>
+        <li>
+					<a href="http://oregonstate.edu">OSU</a>
+				</li>
+
+			</ul>
 		</div>
 	</div>
-</div><!-- Navigation Bloc END --><!-- bloc-8 --><div class="bloc l-bloc " id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="img/paper.jpg" class="img-responsive" alt='' />
-			</div>
-			<div class="col-sm-8">
-				<h4 class="mg-sm">
-					<span class="fa fa-file-text"></span> Recommending Task Context
-				</h4>
-				<p class="mg-md">
-					Rafael Leano, Bakhtiar Kasi, Anita Sarma<br />Workshop on Context for Software Development<br />2014
-				</p>
-				<h4 class="mg-sm">
-					<span class="fa fa-file-text"></span> Dynamic Software Product Lines for Context-Aware Web Services
-				</h4>
-				<p class="mg-md">
-					Rafael Leano, Carlos Parra, Xavier Blanc, Laurence Duchien, Nicolas Pessemier, Chantal Taconet, Zakia Kazi-Aoul<br />Publication: <a href="http://hal.inria.fr/inria-00425565" target="_blank">Enabling Context-Aware Web Services: Methods, Architectures, and Technologies</a><br />2010
-				</p>
-				<h4 class="mg-sm">
-					<span class="fa fa-file-text"></span> Using change intentions to guide evolution and versioning in Model Driven Development
-				</h4>
-				<p class="mg-md">
-					Rafael Leano, Rubby Casallas<br />Workshop on Models and Evolution, Joint MoDSE-MCCM 2009 Workshop<br /><a href="http://www.modse.fr/doku.php?id=Proceedings&amp;DokuWiki=7f94c300ee06c49203acb78ae1ac2a9f" target="_blank">Link</a><br />2009
-				</p>
-				<h4 class="mg-sm">
-					<span class="fa fa-file-text"></span> Changeset MDA : Applying MDA for development of applications
-				</h4>
-				<p class="mg-md">
-					Juan Carlos Alvarez, Nicolas Hoyos, Rafael Leano<br />Undergraduate Thesis<br />Publisher: <a href="http://webcat.uniandes.edu.co/uhtbin/cgisirsi/x/0/0/5?searchdata1=295675%7Bckey%7D" target="_blank">Uniandes</a><br />2007
-				</p>
-			</div>
-		</div>
-	</div>
-</div><!-- bloc-8 END --><!-- Footer - bloc-10 --><div class="bloc  d-bloc " id="bloc-10">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-8">
-				<span class="fa fa-university icon-md pull-left"></span>
-				<p>
-					PhD Student<br /><a class="l" href="http://www.unl.edu" target="_blank">University of Nebraska–Lincoln</a>
-				</p><span class="fa fa-briefcase icon-md pull-left"></span>
-				<p>
-					Research Assistant<br /><a class="l" href="http://cse.unl.edu" target="_blank">Department of Computer Science and Engineering</a>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="mg-md">
-					<span class="fa fa-calendar"></span> Last Updated – April 2015
-				</h5>
-				<h5 class="mg-md">
-					<span class="fa fa-copyright"></span> Rafael Leano – 2015
-				</h5>
-			</div>
-		</div>
-	</div>
-</div><!-- Footer - bloc-10 END -->
+
 </div>
-<!-- Main container END -->
+
+<!-- End Navigation -->
+
+<!-- part 3 -->
+
+<div id="content" class="container" style="max-width: 970px; padding-bottom: 30px;">
+	<div class="row row-centered">
+
+		<div class="col-max-550 col-centered col-md-7 col-sm-6 col-xs-12">
+			<h1> <i class="fa fa-book pull-left"></i> Publications </h1>
+
+      <div class="text-left p-a-10">
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Labeling relevant skills in tasks: can the crowd help?</h4>
+          <p class="text">
+            <strong>Rafael Leano</strong>, Zhendong Wang, Anita Sarma<br>
+            <h6>
+              in <i>Visual Languages/Human-Centric Computing (VL/HCC)</i>
+              (2016)
+            </h6>
+          </p>
+        </div>
+
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Recommending Task Context</h4>
+          <p class="text">
+            <strong>Rafael Leano</strong>, Bakhtiar Kasi, Anita Sarma<br>
+            <h6>
+              in <i>Workshop on Context for Software Development</i>
+              (2014)
+            </h6>
+          </p>
+        </div>
+
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Dynamic Software Product Lines for Context-Aware Web Services</h4>
+          <p class="text">
+            Carlos Parra, <strong>Rafael Leano</strong> (as Rafael Leaño), Xavier Blanc, Laurence Duchien, Nicolas Pessemier, Chantal Taconet, Zakia Kazi-Aoul<br>
+            <h6>
+              in <a href="http://hal.inria.fr/inria-00425565" target="_blank"><i>Enabling Context-Aware Web Services: Methods, Architectures, and Technologies</i></a>
+              (2010)
+            </h6>
+          </p>
+        </div>
+
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Définition d'une chaîne de production sensible au contexte pour les plates-formes ubiquitaires</h4>
+          <p class="text">
+            Laurence Duchien, <strong>Rafael Leano</strong> (as Rafael Leaño), Carlos Parra, Nicolas Pessemier<br>
+            <h6>
+              English Title: Defining a context-aware software product line for ubiquitous platforms <br>
+              <a href="https://hal.inria.fr/hal-00669788" target="_blank"><i>Technical Report</i></a>
+              (2009) [in french]
+            </h6>
+          </p>
+        </div>
+
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Using change intentions to guide evolution and versioning in Model Driven Development</h4>
+          <p class="text">
+            <strong>Rafael Leano</strong> (as Rafael Leaño), Rubby Casallas<br>
+            <h6>
+              in <a href="http://www.modse.fr/doku.php?id=Proceedings&DokuWiki=7f94c300ee06c49203acb78ae1ac2a9f" target="_blank"><i>Workshop on Models and Evolution, Joint MoDSE-MCCM</i></a>
+              (2009)
+            </h6>
+          </p>
+        </div>
+
+        <i class="fa fa-file-text pull-left" style="padding-top: 2px;"></i>
+        <div style="padding-left: 20px;">
+          <h4>Changeset MDA - Aplicación de MDA (Model-Driven Architecture) para el desarrollo de aplicaciones</h4>
+          <p class="text">
+            Juan Carlos Alvarez, Nicolas Hoyos, <strong>Rafael Leano</strong> (as Rafael Leaño)<br>
+            <h6>
+              English Title: Changeset MDA - Applying MDA for development of applications <br>
+              <a href="http://webcat.uniandes.edu.co/uhtbin/cgisirsi/x/0/0/5?searchdata1=295675%7Bckey%7D" target="_blank"><i>Bachelor Thesis</i></a>
+              (2007) [in spanish]
+            </h6>
+          </p>
+        </div>
+			</div>
+		</div>
+    <div class="col-centered col-max-230 col-sm-4 vtop" style="padding-top: 30px;">
+      <img class="" src="img/paper.jpg" width="200"/>
+    </div>
+	</div>
+</div>
+
+<footer>
+<div id="content" class="container" style="max-width: 970px;">
+	<div class="col-centered col-sm-12" style="padding: 20px;">
+		<div class="row row-centered">
+			<div class="col-centered col-md-6 col-sm-7">
+					<div class="custom text-left">
+						<i class="fa fa-university fa-3x pull-left"></i>
+						<div class="text">
+							PhD Candidate
+							<h6 class="cust-margin">Oregon State University</h6>
+						</div>
+					</div>
+					<div class="custom text-left">
+						<i class="fa fa-desktop fa-3x pull-left"></i>
+            <!-- <i class="mega-octicon octicon-file-binary pull-left"></i> -->
+						<div class="text">
+							Graduate Research Assistant
+							<h6 class="cust-margin">School of Electrical Engineering and Computer Science</h6>
+
+						</div>
+					</div>
+
+			</div>
+			<div class="col-centered col-lg-5 col-md-5 col-sm-4 vtop">
+				<p class="cust-margin">
+					<span class="fa fa-calendar"></span> Last Updated – Apr 2017
+				</p>
+				<p class="cust-margin">
+					<span class="fa fa-copyright"></span> Rafael Leaño – 2017
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+
+
+<script src="./js/bootstrap.js"></script>
+
+
+<!-- APP CONTENT -->
+
+	<!-- jQuery CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS CDN -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- Bootstrap JS local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
+	<!-- Bootstrap CSS local fallback -->
+	<script>
+	    $(document).ready(function() {
+	    var bodyColor = $('body').css('color');
+	    if(bodyColor != 'rgb(51, 51, 51)') {
+	    $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');}});
+	</script>
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 </body>
-    
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
-
 </html>

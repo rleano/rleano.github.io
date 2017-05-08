@@ -2,146 +2,255 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- tells IE to use latest render engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the size of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <title>index - A ‘bit’ of me – Rafael Leano</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/octicons.css">
+
+    <link rel="stylesheet" type="text/css" href="./style_osu.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Play" rel="stylesheet">
+
+    <title>a `bit` of me – Rafa Leano</title>
+
 </head>
 <body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- Navigation Bloc -->
-<div class="bloc bg-tile-d-bg bg-repeat bgc-4 d-bloc" id="nav-bloc">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand ltc-3" href="index.html"><img src="img/R-N.blk.svg" width="40" alt='' />A ‘bit&rsquo; of me – Rafael Leano</a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav">
-					<li>
-						<a href="index.html" class="ltc-3">Home</a>
-					</li>
-					<li>
-						<a href="research.html">Research</a>
-					</li>
-					<li>
-						<a href="projects.html">Projects</a>
-					</li>
-					<li>
-						<a href="publications.html">Publications</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- Navigation Bloc END -->
 
-<!-- bloc-1 -->
-<div class="bloc  l-bloc" id="bloc-1">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="img/IM_2013-SF_800.png" class="img-responsive img-circle img-frame-rd-md center-block" width="250" alt='' />
-				<h4 class="mg-sm text-right ">
-					<span class="fa fa-university"></span> PhD Student
-				</h4>
-				<h4 class="mg-sm text-right ">
-					<span class="fa fa-briefcase"></span> Research Assistant
-				</h4>
-				<h4 class="mg-sm text-right ">
-					<span class="fa fa-map-marker"></span> Avery Hall 103A
-				</h4>
-				<h4 class="mg-sm text-right ">
-					<span class="fa fa-envelope"></span> <a href="http://www.google.com/recaptcha/mailhide/d?k=01KyObK9qHbPGdhFPgCcxyRg==&amp;c=M2wbYOGIb_oikDHJR6Z9Zo-Nl3bTUw3KrtfCJ-24Pp0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501KyObK9qHbPGdhFPgCcxyRg\75\75\46c\75M2wbYOGIb_oikDHJR6Z9Zo-Nl3bTUw3KrtfCJ-24Pp0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">[click@to.reveal]</a>
-				</h4>
-			</div>
-			<div class="col-sm-8">
-				<h1 class="mg-md">
-					Rafael Leano
-				</h1>
-				<h2 class="mg-md">
-					<span class="fa fa-home"></span> About me
-				</h2>
-				<p class=" text-justify mg-md">
-					I am a fourth year Phd student at the Computer Science and Engineering department of the University of Nebraska–Lincoln (UNL). I work as a Research Assistant under the supervision of Dr. Anita Sarma.<br /><br />Currently, I focus on collaborative software development. I address issues such as task assignment and conflict resolution. My aim is to build tools that aid developers to work better together. For more details please refer to the appropiate pages below.<br />
-				</p><a href="research.html" class="btn   btn-lg btn-c-4">Research</a><a href="projects.html" class="btn   btn-lg btn-c-2 btn-c-4">Projects</a><a href="publications.html" class="btn   btn-lg btn-c-2 btn-c-4">Publications</a>
-			</div>
+<!-- Start Navigation -->
+
+<div class="navbar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+
+			<a class="navbar-brand" href="#">a `bit` of me – Rafa Leano</a>
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-explanded="false">
+
+				<!-- hide info from screen reader -->
+				<span class="sr-only"></span>
+
+				<!-- three bar on right -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#"> <span class="glyphicon glyphicon-home"/>
+						<span class="sr-only"> Home (current)</span>
+					</a>
+				</li>
+				<li>
+					<a href="research.html">Research</a>
+				</li>
+				<li>
+					<a href="publications.html">Publications</a>
+				</li>
+        <li>
+					<a href="http://oregonstate.edu">OSU</a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<!-- End Navigation -->
+
+<div id="content" class="container" style="max-width: 970px; padding-bottom: 30px;">
+	<div class="row row-centered">
+		<div class="col-centered col-max-230 col-sm-4 vtop" style="padding-top: 30px;">
+			<img class="img-rounded" src="img/avatar_med.jpg" width="200" />
+			<h2 id="name"> Rafa Leano </h3>
+			<h4 id="subname"> (Rafael Leaño) </h4>
+
+			<p class="text-right p-a-10">
+
+				<span class="my-info">
+				PhD Candidate
+				</span>
+				<i class="fa fa-book fa-fw"></i>
+				<br>
+
+				<span class="my-info">
+				Research Assistant
+				</span>
+				<i class="fa fa-briefcase fa-fw"></i>
+				<br>
+
+				<span class="my-info" >
+					Kelley Eng. Center 2030
+				</span>
+				<a href="https://goo.gl/maps/4rhLWo8aeNC2"><i class="fa fa-map fa-fw" style="color:black"></i></a>
+				<br>
+        <span class="my-info" >
+					Corvallis, OR, USA
+				</span>
+				<a href="https://goo.gl/maps/QRRp2VxsexL2"><i class="fa fa-globe fa-fw" style="color:black"></i></a>
+				<br>
+			</p>
+      <p class="text-right">
+				<a class="no-decor" href="#" data-toggle="tooltip" title="LinkedIn" data-placement="bottom">
+					<i class="fa fa-linkedin-square fa-4x" style="padding: 5px;"></i>
+				</a>
+				<a class="no-decor" href="#" data-toggle="tooltip" title="GitHub" data-placement="bottom">
+				<i class="fa fa-github-square fa-4x" style="padding: 5px;"></i>
+				</a>
+				<a class="no-decor" href="#" data-toggle="tooltip" title="Email" data-placement="bottom">
+				<i class="fa fa-envelope-square fa-4x" style="padding: 5px;"></i>
+				</a>
+			</p>
+		</div>
+		<div class="col-max-550 col-centered col-md-7 col-sm-6 col-xs-12">
+			<h1> <i class="fa fa-street-view pull-left"></i> About me </h1>
+			<p class="text-justify">
+				Currently, I am a <strong>Computer Science PhD candidate</strong> at <a href="http://oregonstate.edu" target="_blank">Oregon State University (OSU)</a> in the
+				<a href="http://eecs.oregonstate.edu" target="_blank">School of Electrical Engineering and Computer Science (EECS)</a>, where I work as a graduate research assistant under the supervision of
+				<a href="http://web.engr.oregonstate.edu/~sarmaa/" target="_blank">Dr. Anita Sarma</a>.
+				<br><br>
+        My main focus is on <i>collaborative software development</i>. Particularly, the issues that developers face when working in a distributed development environment; where work is broken into tasks and given to developers and their contributions are committed when finished.
+        <br><br>
+        My research uses data mining of software repositories and qualitative data exploration to gather data. Afterwards, clustering, principal component analysis, natural language processing, and machine learning, etc. are used to analyze it. My end goal is to support developers to resolve this issues in a more efficient, better-informed manner.
+        <br><br>
+        I obtained my Master of Engineering (Software engineering) from the Universidad de los Andes in Bogota, Colombia; where I worked with Model-Driven Development (MDD), software product lines, and code generation. During my studies I have interned at the <a href="https://www.inria.fr/centre/lille" target="_blank" data-toggle="tooltip" title="Institut National de Recherche en Informatique et en Automatique" data-placement="auto">INRIA (Lille, France)</a> and <a href="https://www.inria.fr/centre/lille" target="_blank" data-toggle="tooltip" title="International Business Machines" data-placement="auto">IBM (Massachusetts, USA)</a>.
+
+			</p>
+
 		</div>
 	</div>
 </div>
-<!-- bloc-1 END -->
 
-<!-- bloc-2 -->
-<div class="bloc  l-bloc" id="bloc-2">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2">
-				<div class="col-sm-3 text-center">
-					<a class="social-lg" href="https://www.linkedin.com/pub/rafael-leano/2b/a05/166" target="_blank"></a>
-					<h3 class="mg-md">
-						Contact:
-					</h3>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="social-lg" href="https://github.com/rleano" target="_blank"></a><a href="https://www.linkedin.com/pub/rafael-leano/2b/a05/166" target="_blank"><span class="fa fa-linkedin-square icon-lg" data-placement="top" data-toggle="tooltip" title="LinkedIn Profile"></span></a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="social-lg" href="index.html"></a><a href="https://github.com/rleano" target="_blank"><span class="fa fa-github-square icon-lg" data-placement="top" data-toggle="tooltip" title="GitHub Profile"></span></a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a href="http://www.google.com/recaptcha/mailhide/d?k=01KyObK9qHbPGdhFPgCcxyRg==&amp;c=M2wbYOGIb_oikDHJR6Z9Zo-Nl3bTUw3KrtfCJ-24Pp0=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501KyObK9qHbPGdhFPgCcxyRg\75\75\46c\75M2wbYOGIb_oikDHJR6Z9Zo-Nl3bTUw3KrtfCJ-24Pp0\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address"><span class="fa fa-envelope-square icon-lg"></span></a>
-				</div>
-			</div>
-		</div>
+<!-- part 4 -->
+
+<div id="content" class="container" style="max-width: 970px; padding-bottom: 30px;";>
+  <div class="row row-centered">
+    <div class="col-centered">
+      <h1> <i class="fa fa-info-circle pull-left"></i> Interests </h1>
+    </div>
+  </div>
+	<div class="row row-centered" style="max-width: 970px;">
+    <div class="col-centered" style="max-width: 970px; padding-left: 50px; padding-right: 50px; padding-bottom: 15px;">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="custom text-left">
+          <i class="fa fa-cogs fa-3x pull-left"></i>
+          <div class="text">
+            Machine Learning
+            <h6 class="cust-margin">Supervised Learning, Data Mining, Feature Selection, Dimensionality Reduction, Clustering Analysis, Sigmoid Functions, Deep Learning, Convolution layers, LSTMs,</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="custom text-left">
+          <i class="fa fa-comments-o fa-3x pull-left"></i>
+          <div class="text">
+            Natural Language Processing
+            <h6 class="cust-margin">Word/Vector Representation, Parsing Trees, Concept Identification, Latent Dirichlet Allocation (LDA), Part-of-speech Tagging, Stemming, Stopword Removal</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-centered" style="max-width: 970px; padding-left: 50px; padding-right: 50px; padding-bottom: 15px;">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="custom text-left">
+          <i class="fa fa-code fa-3x pull-left"></i>
+          <div class="text">
+            Software Engineering
+            <h6 class="cust-margin">Conflict resolution, Task assignment, Skill identification, Distributed development, Code repositories, Issue trackers</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="custom text-left">
+          <i class="fa fa-sitemap fa-3x pull-left"></i>
+          <div class="text">
+            Software Product Lines
+            <h6 class="cust-margin">Code generation, Assisted evolution, Model-driven development, Product Configuration, Meta-modeling, Model Transformation</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+	</div>
+
 	</div>
 </div>
-<!-- bloc-2 END -->
 
-<!-- Footer - bloc-10 -->
-<div class="bloc  d-bloc " id="bloc-10">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-8">
-				<span class="fa fa-university icon-md pull-left"></span>
-				<p>
-					PhD Student<br /><a class="l" href="http://www.unl.edu" target="_blank">University of Nebraska–Lincoln</a>
-				</p><span class="fa fa-briefcase icon-md pull-left"></span>
-				<p>
-					Research Assistant<br /><a class="l" href="http://cse.unl.edu" target="_blank">Department of Computer Science and Engineering</a>
+<footer>
+<div id="content" class="container" style="max-width: 970px;">
+	<div class="col-centered col-sm-12" style="padding: 20px;">
+		<div class="row row-centered">
+			<div class="col-centered col-md-6 col-sm-7">
+					<div class="custom text-left">
+						<i class="fa fa-university fa-3x pull-left"></i>
+						<div class="text">
+							PhD Candidate
+							<h6 class="cust-margin">Oregon State University</h6>
+						</div>
+					</div>
+					<div class="custom text-left">
+						<i class="fa fa-desktop fa-3x pull-left"></i>
+            <!-- <i class="mega-octicon octicon-file-binary pull-left"></i> -->
+						<div class="text">
+							Graduate Research Assistant
+							<h6 class="cust-margin">School of Electrical Engineering and Computer Science</h6>
+
+						</div>
+					</div>
+
+			</div>
+			<div class="col-centered col-lg-5 col-md-5 col-sm-4 vtop">
+				<p class="cust-margin">
+					<span class="fa fa-calendar"></span> Last Updated – Apr 2017
+				</p>
+				<p class="cust-margin">
+					<span class="fa fa-copyright"></span> Rafael Leaño – 2017
 				</p>
 			</div>
-			<div class="col-sm-4">
-				<h5 class="mg-md">
-					<span class="fa fa-calendar"></span> Last Updated – April 2015
-				</h5>
-				<h5 class="mg-md">
-					<span class="fa fa-copyright"></span> Rafael Leano – 2015
-				</h5>
-			</div>
 		</div>
 	</div>
 </div>
-<!-- Footer - bloc-10 END -->
-</div>
-<!-- Main container END -->
+</footer>
+
+
+<script src="./js/bootstrap.js"></script>
+
+
+<!-- APP CONTENT -->
+
+	<!-- jQuery CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS CDN -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- Bootstrap JS local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
+	<!-- Bootstrap CSS local fallback -->
+	<script>
+	    $(document).ready(function() {
+	    var bodyColor = $('body').css('color');
+	    if(bodyColor != 'rgb(51, 51, 51)') {
+	    $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');}});
+	</script>
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 </body>
-    
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
-
 </html>

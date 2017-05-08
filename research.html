@@ -2,204 +2,156 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- tells IE to use latest render engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the size of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <title>research - A ‘bit’ of me – Rafael Leano</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/octicons.css">
+
+    <link rel="stylesheet" type="text/css" href="./style_osu.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Play" rel="stylesheet">
+
+    <title>a `bit` of me – Rafa Leano</title>
+
 </head>
 <body>
-<!-- Main container -->
-<div class="page-container">
-    <!-- Navigation Bloc --><div id="b-nav" class="bloc-container">
-	<div id="bloc-nav" class="d-mode">
-		<div class="bloc bg-tile-d-bg bg-repeat bgc-4 d-bloc" id="nav-bloc">
-			<div class="container bloc-sm">
-				<nav class="navbar row">
-					<div class="navbar-header">
-						<a class="navbar-brand ltc-3" href="index.html"><img src="img/R-N.blk.svg" width="40" alt='' />A ‘bit’ of me – Rafael Leano</a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-1">
-						<ul class="site-navigation nav">
-							<li>
-								<a href="index.html" class="ltc-3">Home</a>
-							</li>
-							<li>
-								<a href="research.html">Research</a>
-							</li>
-							<li>
-								<a href="projects.html">Projects</a>
-							</li>
-							<li>
-								<a href="publications.html">Publications</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+
+<!-- Start Navigation -->
+
+<div class="navbar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+
+			<a class="navbar-brand" href="#">a `bit` of me – Rafa Leano</a>
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-explanded="false">
+
+				<!-- hide info from screen reader -->
+				<span class="sr-only"></span>
+
+				<!-- three bar on right -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+        <li>
+					<a href="index.html"> <span class="glyphicon glyphicon-home"/>
+						<span class="sr-only"> Home (current)</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">Research</a>
+				</li>
+				<li>
+					<a href="publications.html">Publications</a>
+				</li>
+        <li>
+					<a href="http://oregonstate.edu">OSU</a>
+				</li>
+
+			</ul>
 		</div>
 	</div>
-</div><!-- Navigation Bloc END --><!-- bloc-3 --><div class="bloc l-bloc " id="bloc-3">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-8">
-				<h2 class="mg-md">
-					<span class="fa fa-flask"></span> Research
-				</h2>
-				<p>
-					My main research interest is collaborative software development. Specifically, I aim to aid developers with their tasks and the common issues they deal with when working with others (specially in distributed collaboration).<br /><br />One example is to help developers deal with software conflicts by enhancing workspace awareness. Providing additional information helps both prevent information overload and assist developers prioritize their conflicts.<br /><br />Additionally, enhancing the task context (i.e. the information we have of a task) can be used to solve task assignment in both directions: (1) Suggesting capable developers for a specific task (task → developers), and (2) recommending tasks that a developer can work on (developer → tasks)
-				</p><a class="btn   btn-lg btn-c-4" onclick="scrollToTarget('#interests')">Interests</a><a href="projects.html" class="btn   btn-lg btn-c-4">Projects</a>
-			</div>
-			<div class="col-sm-4">
-				<img src="img/code_binary3.png" class="img-responsive" alt='' />
-			</div>
+
+</div>
+
+<!-- End Navigation -->
+
+<div id="content" class="container" style="max-width: 970px; padding-bottom: 30px;">
+	<div class="row row-centered">
+		<div class="col-max-550 col-centered col-md-7 col-sm-6 col-xs-12">
+			<h1> <i class="fa fa-file-code-o pull-left"></i> Research </h1>
+      <p class="text-justify">
+        Software development is no longer an isolated process. Instead, globalization and new technologies have made distributed development the norm now, where developers contribute their work to compose larger and more complex projects. However, the distributed process has also brought new challenges to developers. My research revolves around these challenges: which are they, how do they affect developers, how are they dealing with these challenges currently, and what do they need to help them resolve these challenges. Two of said issues are task assignment and conflict resolution, and I believe addressing them is important, as developers face them frequently and so far they are unavoidable.
+        <br><br>
+        Task assignment is the decision matching developers and tasks. Expert recommendation currently focuses on suggesting the best developer for a particular issue (i.e. task to developer); however, in open source projects contributors are the ones searching for tasks (i.e. developer to task). Obtaining the required skills and difficulty of a task can help developers find tasks that are appropriate to their abilities, motivations, experience, and dedication.
+        <br><br>
+        Similarly, once developers are contributing their code they can collide with other developers that change common artifacts with them. These collisions can be literal (merge conflicts) or semantical (build/test failures), and their resolution is non-trivial and time consuming. Conflicts are easier to solve the earlier they are found, but interrupting work for every potential conflict can considerable disrupt a developer's workflow. Gathering more details of the type and characteristics of the conflict can give developers a better overall view of the conflicts to help them decide when to interrupt their work to solve them or when it might be better to finish their current task before attempting to resolve the conflict.
+      </p>
+
+		</div>
+    <div class="col-centered col-max-230 col-sm-4 vtop" style="padding-top: 30px;">
+			<img class="" src="img/code_binary3.png" width="200" style="padding-bottom: 30px;"/>
+      <img class="" src="img/git_tree.png" width="200" alt="credits to http://think-like-a-git.net/sections/graphs-and-git/visualizing-your-git-repository.html">
 		</div>
 	</div>
-</div><!-- bloc-3 END --><!-- interests --><div class="bloc l-bloc  feature-list" id="interests">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-sm">
-					Interests
-				</h2>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-6">
-				<div class="col-sm-9">
-					<h4 class="text-right mg-md">
-						Machine Learning
-					</h4>
-					<p class="text-right">
-						Supervised Learning, Data Mining, Feature Selection
-					</p>
-				</div>
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-cogs icon-round icon-md"></span>
+</div>
+
+<footer>
+<div id="content" class="container" style="max-width: 970px;">
+	<div class="col-centered col-sm-12" style="padding: 20px;">
+		<div class="row row-centered">
+			<div class="col-centered col-md-6 col-sm-7">
+					<div class="custom text-left">
+						<i class="fa fa-university fa-3x pull-left"></i>
+						<div class="text">
+							PhD Candidate
+							<h6 class="cust-margin">Oregon State University</h6>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-group icon-round icon-md"></span>
+					<div class="custom text-left">
+						<i class="fa fa-desktop fa-3x pull-left"></i>
+            <!-- <i class="mega-octicon octicon-file-binary pull-left"></i> -->
+						<div class="text">
+							Graduate Research Assistant
+							<h6 class="cust-margin">School of Electrical Engineering and Computer Science</h6>
+
+						</div>
 					</div>
-				</div>
-				<div class="col-sm-9">
-					<h4 class="mg-md">
-						Crowdsourcing
-					</h4>
-					<p>
-						Learning, Motivation, Voting
-					</p>
-				</div>
+
 			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-6">
-				<div class="col-sm-9">
-					<h4 class="text-right mg-md">
-						Collaborative Development
-					</h4>
-					<p class="text-right">
-						Conflict Resolution, Git, Code Merging, Developer Communication, Expertise Recommendation, Task Assignment
-					</p>
-				</div>
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-cubes icon-round icon-md"></span>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-tasks icon-round icon-md"></span>
-					</div>
-				</div>
-				<div class="col-sm-9">
-					<h4 class="mg-md">
-						Task Context
-					</h4>
-					<p>
-						Related Files, Natural Language Processing, Task Similarity
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-6">
-				<div class="col-sm-9">
-					<h4 class="text-right mg-md">
-						Code Generation
-					</h4>
-					<p class="text-right">
-						Software Product Lines, Automatic Code Generation, Assited Evolution, Model-Driven Development
-					</p>
-				</div>
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-pencil icon-round icon-md"></span>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="col-sm-3">
-					<div class="text-center">
-						<span class="fa fa-star icon-round icon-md"></span>
-					</div>
-				</div>
-				<div class="col-sm-9">
-					<h4 class="mg-md">
-						Development Tools
-					</h4>
-					<p>
-						Eclipse Plugins, Web Tools, Node.js
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div><!-- interests END --><!-- Footer - bloc-10 --><div class="bloc  d-bloc " id="bloc-10">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-8">
-				<span class="fa fa-university icon-md pull-left"></span>
-				<p>
-					PhD Student<br /><a class="l" href="http://www.unl.edu" target="_blank">University of Nebraska–Lincoln</a>
-				</p><span class="fa fa-briefcase icon-md pull-left"></span>
-				<p>
-					Research Assistant<br /><a class="l" href="http://cse.unl.edu" target="_blank">Department of Computer Science and Engineering</a>
+			<div class="col-centered col-lg-5 col-md-5 col-sm-4 vtop">
+				<p class="cust-margin">
+					<span class="fa fa-calendar"></span> Last Updated – Apr 2017
+				</p>
+				<p class="cust-margin">
+					<span class="fa fa-copyright"></span> Rafael Leaño – 2017
 				</p>
 			</div>
-			<div class="col-sm-4">
-				<h5 class="mg-md">
-					<span class="fa fa-calendar"></span> Last Updated – April 2015
-				</h5>
-				<h5 class="mg-md">
-					<span class="fa fa-copyright"></span> Rafael Leano – 2015
-				</h5>
-			</div>
 		</div>
 	</div>
-</div><!-- Footer - bloc-10 END -->
 </div>
-<!-- Main container END -->
+</footer>
+
+
+<script src="./js/bootstrap.js"></script>
+
+
+<!-- APP CONTENT -->
+
+	<!-- jQuery CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS CDN -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- Bootstrap JS local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
+	<!-- Bootstrap CSS local fallback -->
+	<script>
+	    $(document).ready(function() {
+	    var bodyColor = $('body').css('color');
+	    if(bodyColor != 'rgb(51, 51, 51)') {
+	    $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');}});
+	</script>
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 </body>
-    
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
-
 </html>

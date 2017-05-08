@@ -29,7 +29,8 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 130px;
-  background-image: url("./img/osu_logo_back2.png");
+  /*padding-right: 130px;*/
+  background-image: url("./img/new_osu3.png");
   background-repeat: no-repeat;
   color: #ffffff !important;
 }
@@ -92,6 +93,14 @@ h1, h2, h3, h4 {
 	padding-left: 0px;
 	padding-right: 10px;
 }
+
+/*.my-link{
+  color: #f36119;
+}
+
+.my-link > a:hover {
+	color: black;
+}*/
 
 .row-centered {
     text-align:center;
